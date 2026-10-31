@@ -1,0 +1,177 @@
+/* page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* background */
+.bg-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/chrisschweiger-seattle-6276806.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* boxes */
+.container {
+    padding: 15px;
+    margin: 5px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: rgba(244, 248, 251, 0.85);
+    max-width: 1200px;
+}
+
+/* main body */
+.main-body {
+    display: flex;
+    width: 100%;
+}
+
+/* text side */
+.text-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* image side */
+.image-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.main-page-header {
+    width: 100%;
+}
+
+.main-page-header h1 {
+    font-family: 'Madimi One', cursive;
+    font-size: 2rem;
+}
+
+.main-page-header .subheader {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* navigation */
+.page-navigation {
+    width: 100%;
+}
+
+/* main body header */
+.main-body-header h2 {
+    font-family: 'Madimi One', cursive;
+    font-size: 1.5rem;
+}
+
+/* body sections */
+.body h3 {
+    font-family: 'Madimi One', cursive;
+    font-size: 1.3rem;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+}
+
+/* nav links */
+.page-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-navigation a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* active page links */
+.page-navigation a.active {
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.page-navigation a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* side images */
+.aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* image attribution */
+.image-attribution {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* anchor */
+#top {
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+    }
+
+    .text-side {
+        flex: none;
+    }
+
+    .image-side {
+        flex: none;
+    }
+
+    .main-page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-body-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .body h3 {
+        font-size: 1.1rem;
+    }
+
+    .page-navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
