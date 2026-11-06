@@ -57,12 +57,12 @@ body {
 
 .main-page-header h1 {
     font-family: 'Madimi One', cursive;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .main-page-header .subheader {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     color: #555;
     margin-top: 5px;
