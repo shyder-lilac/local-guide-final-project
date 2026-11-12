@@ -145,6 +145,12 @@ html {
     position: absolute;
 }
 
+a:focus {
+    outline: 2px solid #3c94e7;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     .main-body {
         flex-direction: column;
